@@ -20,8 +20,6 @@ jobs:
            java-version: '17'
            distribution: 'temurin'
            cache: maven
-      - name: Compile App 
-        run: javac App.java
-      - name: Run App
-        run: java App
+      - name: version
+        run: java -v
           
