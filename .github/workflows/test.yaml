@@ -25,5 +25,5 @@ jobs:
            distribution: 'temurin'
            cache: maven
       - name: Complie javac
-        run: javac App.java
+        run: javac src/main/java/group/artifact/App.java
           
