@@ -2,10 +2,6 @@ name: Greeting on variable day
 
 on:
   workflow_dispatch
-  
-defaults:
-  run:
-    working-directory: web
 
 env:
   DAY_OF_WEEK: Monday
