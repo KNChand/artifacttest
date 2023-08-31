@@ -38,6 +38,6 @@ jobs:
       - name: maven package
         run: mvn package
       - run: sudo chmod -R 777 /home/runner/work/artifacttest/artifacttest
-      - run: java -jar target/artifact-0.0.1-SNAPSHOT.jar
+      - run: java -jar target/artifact-0.0.1-SNAPSHOT.jar App
 
           
