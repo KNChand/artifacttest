@@ -38,10 +38,6 @@ jobs:
       - name: maven package
         run: mvn package
       - run: sudo chmod -R 777 /home/runner/work/artifacttest/artifacttest
-      - run: mkdir chandan
-      - run: cd chandan
-      - run: pwd
-      - run: cp /home/runner/work/artifacttest/artifacttest/target .
-      - run: ls
+      - run: java -jar target/artifact-0.0.1-SNAPSHOT.jar
 
           
