@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       Greeting: Hello
-      First_Name: Mona
+      First_Name: Chandan K N
     steps:
       - name: "Say Hello Mona it's Monday"
         run: echo "$Greeting $First_Name. Today is $DAY_OF_WEEK!"
