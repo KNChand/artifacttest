@@ -2,6 +2,10 @@ name: Greeting on variable day
 
 on:
   workflow_dispatch
+  
+defaults:
+  run:
+    working-directory: web
 
 env:
   DAY_OF_WEEK: Monday
@@ -20,6 +24,6 @@ jobs:
            java-version: '17'
            distribution: 'temurin'
            cache: maven
-      - name: version
-        run: java -version
+      - name: Complie javac
+        run: javac App.java
           
