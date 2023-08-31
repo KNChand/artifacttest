@@ -13,6 +13,13 @@ jobs:
       Greeting: Hello
       First_Name: Chandan K N
     steps:
-      - name: "Say Hello Mona it's Monday"
-        run: echo "$Greeting $First_Name. Today is $DAY_OF_WEEK!"
+      - uses: actions/checkout@v3
+      - name: Set up JDK 17
+        uses: actions/setup-java@v3
+        with:
+           java-version: '17'
+           distribution: 'temurin'
+           cache: maven
+      - name: Run App Class
+        run: java App.java
           
