@@ -22,4 +22,6 @@ jobs:
            cache: maven
       - name: maven package
         run: mvn package
+      - run: mkdir staging && cp target/*.jar staging
+      - run: java -jar artifact-0.0.1-SNAPSHOT.jar App
           
