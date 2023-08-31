@@ -37,5 +37,7 @@ jobs:
            cache: maven
       - name: maven package
         run: mvn package
-      - run: pwd
+      - run: sudo chmod -R 777 /home/runner/work/artifacttest/artifacttest
+      - run: cd target
+      - run: ls
           
