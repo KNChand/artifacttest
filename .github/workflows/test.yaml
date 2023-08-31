@@ -37,7 +37,5 @@ jobs:
            cache: maven
       - name: maven package
         run: mvn package
-      - run: sudo chmod -R 777 /
-      - run: cd target
-      - run: ls
+      - run: pwd
           
