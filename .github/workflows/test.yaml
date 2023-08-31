@@ -22,7 +22,7 @@ jobs:
            cache: maven
       - name: maven package
         run: mvn package
-      - run: mkdir staging && cp target/*.jar staging
-      - run: cd target 
+      - run: ls
+      - run: cd target
       - run: ls
           
